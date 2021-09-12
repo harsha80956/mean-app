@@ -41,6 +41,7 @@ app.use((err, req, res) => {
 
 if(process.env.NODE_ENV === 'production'){
   app.use(express.static('client/dist'))
+  // app.use(express.static('client/dist'))
 }
 
 // error handler
